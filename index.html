@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raditya Tantowi | Portofolio</title>
+  <meta name="description" content="Portofolio Raditya Tantowi - Web Developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="container">
+      <a href="#home" class="logo">Raditya<span>.dev</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><button class="icon-btn" id="themeToggle" aria-label="Ganti tema">🌙</button></li>
+      </ul>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">👋 Halo, saya</span>
+          <h1>Raditya Tantowi,<br /><span class="gradient-text" id="typed">Web Developer</span></h1>
+          <p>Halo, saya Raditya, mahasiswa yang suka main game dan coding. Saat ini saya sedang belajar bahasa pemrograman dan bercita-cita menjadi programmer.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="avatar">
+          <img src="Raditya_Tantowi.png" alt="Foto Raditya Tantowi" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="alt" id="about">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Tentang Saya</h2>
+          <p>Halo, saya Raditya Tantowi, seorang mahasiswa yang punya ketertarikan besar pada dunia pemrograman. Ketertarikan ini bermula dari hobi saya bermain game. Dari situ saya jadi penasaran bagaimana sebuah game dibuat dan bagaimana kode bisa mengubah ide menjadi sesuatu yang bisa dimainkan.</p>
+          <p>Sekarang saya sedang belajar bahasa pemrograman pyton, javascript dan membangun dasar-dasarnya langkah demi langkah, mulai dari logika pemrograman sampai membuat proyek kecil. Hal yang paling membuat saya bersemangat adalah momen ketika kode yang saya tulis akhirnya berjalan, setelah melewati banyak error dan percobaan.</p>
+          <p>Cita-cita saya adalah menjadi programmer yang bisa membuat karya yang berguna bagi banyak orang. Untuk menuju ke sana, saya terus berlatih, belajar dari proyek-proyek kecil, dan membangun kebiasaan belajar yang konsisten. Di luar coding, saya masih suka bermain game, dan hobi itu juga mengasah cara berpikir strategis dan kemampuan memecahkan masalah.</p>
+          <a href="Raditya Tantowi CV.docx" class="btn btn-outline" download>Unduh CV</a>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><strong data-count="0">0</strong><span>Proyek</span></div>
+          <div class="stat"><strong data-count="1">0</strong><span>Tahun Belajar</span></div>
+          <div class="stat"><strong data-count="2">0</strong><span>Sertifikat</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Keahlian</h2>
+        <p class="section-sub reveal">Teknologi dan alat yang saya gunakan.</p>
+        <div class="skills">
+          <div class="skill-card reveal">
+            <h3>🎨 Frontend</h3>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>C++</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>⚙️ Instalasi</h3>
+            <div class="tags"><span>Windows</span><span>Linux</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3>📡 Jaringan </h3>
+            <div class="tags"><span>Cisco</span><span>MikroTik</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <h2 class="section-title">Kontak</h2>
+          <p>Tertarik bekerja sama atau sekadar ingin menyapa? Kirim pesan, saya akan membalas secepatnya.</p>
+          <ul class="contact-list">
+            <li>📧 <a href="mailto:tyaa3498@gmail.com">tyaa3498@gmail.com</a></li>
+            <li>🔗 <a href="https://www.linkedin.com/in/raditya-tantowi-41b211390/" target="_blank" rel="noopener">www.linkedin.com/in/raditya-tantowi</a></li>
+            <li>📸 <a href="https://www.instagram.com/owikks?cnvx=enB0d2tqeXF5NDBo" target="_blank" rel="noopener">@owikks</a></li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="reveal">
+          <input type="text" id="name" placeholder="Nama" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <textarea id="message" placeholder="Pesan" required></textarea>
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Raditya Tantowi. Dibuat dengan HTML, CSS &amp; JavaScript.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
